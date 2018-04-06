@@ -677,11 +677,9 @@ public class HandPokerTest
 		HandScorePoker HSP = hp.getHSP();
 
 		assertEquals(hp.isRoyalFlush(),true);
-		
+		assertEquals(eHandStrength.RoyalFlush, HSP.geteHandStrength());
 		assertEquals(eRank.ACE, HSP.getHiCard().geteRank());
 		assertNull(HSP.getKickers());
-		assertEquals(eHandStrength.RoyalFlush, HSP.geteHandStrength());
-		assertEquals(hp.isRoyalFlush(),true);
 		
 		System.out.println("");
 	}
